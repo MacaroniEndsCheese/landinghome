@@ -20,17 +20,7 @@
 
 
 
-        <script>
-        function addToLinks(clientID) {
-          setTimeout(function() {
-            var elems = document.getElementsByTagName('a');
-            for (var i = 0; i < elems.length; i++) {if (elems[i]['href'].includes("/click?")) 
-            {
-              elems[i]['href'] = elems[i]['href'] + "&sub4=" + clientID;}
-              else if (elems[i]['href'].includes("/click") && elems[i]['href'].includes("?")) {elems[i]['href'] = elems[i]['href'] + "&sub4=" + clientID;}else if (elems[i]['href'].includes("/click") && !(elems[i]['href'].includes("?"))) {elems[i]['href'] = elems[i]['href'] + "?sub4=" + clientID;} else {elems[i]['href'] = elems[i]['href'].replace('/click', '/click?sub4=' + clientID);}}}, 
-          7e2);
-        }
-        </script>
+    
         
         
 
